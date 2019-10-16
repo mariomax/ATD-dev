@@ -41,9 +41,20 @@ Template: astra
 }
 
 @media (min-width: 768px) {
-   .home-page {
-    background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-med@2x.jpg);
-   }
+    .home-page {
+        background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-med@2x.jpg);
+    }
+
+    #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    .wp-caption .wp-caption-text {
+        margin: .5em 0 0;
+    }
 }
 
 @media (min-width: 1024px) {
