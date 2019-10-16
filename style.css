@@ -13,52 +13,62 @@ Template: astra
 /* Color palette */
 
 :root {
-    --white: #FFF;
-    --light: #D2D2D2;
-    --orange: #EB4625;
-    --blue: #20557D;
-    --mid: #5B5B5B;
-    --green: #0E7E12;
-    --dark: #090909;
+  --white: #FFF;
+  --light: #D2D2D2;
+  --orange: #EB4625;
+  --blue: #20557D;
+  --mid: #5B5B5B;
+  --green: #0E7E12;
+  --dark: #090909;
 }
 
 /* Home */
 
 .home-page {
-    background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-vertical.jpg);
+  background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-vertical.jpg);
 }
 
 .home-page h1 {
-    color: var(--white);
-    margin: 60vh 1em 0 0;
-    text-align: right;
+  color: var(--white);
+  margin: 60vh 1em 0 0;
+  text-align: right;
 }
 
 .home-page h2 {
-    color: var(--light);
-    margin: .5em 1em 10vh;
-    text-align: right;
+  color: var(--light);
+  margin: .5em 1em 10vh;
+  text-align: right;
 }
 
 @media (min-width: 768px) {
-    .home-page {
-        background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-med@2x.jpg);
-    }
+  .home-page {
+    background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-med@2x.jpg);
+  }
 
-    #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 1.5rem;
-        grid-row-gap: 1.5rem;
-    }
+  #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
 
-    .wp-caption .wp-caption-text {
-        margin: .5em 0 0;
-    }
+  .wp-caption .wp-caption-text {
+    margin: .5em 0 0;
+  }
+}
+
+@media (min-width: 993px) {
+  .ast-right-sidebar #primary {
+    padding-right: calc(1rem + 20px);
+  }
+
+  .ast-right-sidebar #secondary {
+    padding-left: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
-    .home-page {
-        background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-large.jpg);
-    }
+  .home-page {
+    background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-large.jpg);
+  }
 }
