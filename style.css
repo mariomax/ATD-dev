@@ -22,10 +22,14 @@ Template: astra
   --dark: #090909;
 }
 
-/* Home */
+/* Navigation */
+.elementor-28 .elementor-element.elementor-element-9773597 > .elementor-element-populated {
+  height: 100vh;
+}
 
-.home-page {
-  background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-vertical.jpg);
+/* Home */
+#home-titles {
+  height: calc(100vh - 150px);
 }
 
 .home-page h1 {
@@ -40,10 +44,29 @@ Template: astra
   text-align: right;
 }
 
+ul.features-list {
+  margin: 0 0 1.5em .3em;
+}
+
+.features-list li {
+  font-size: 16px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 16px;
+}
+
+.features-list li:before {
+  content: "\25BA \0020";
+  font-size: 6px;
+  position: absolute;
+  top: 3px;
+  left: -1px;
+}
+
 @media (min-width: 768px) {
-  .home-page {
-    background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-med@2x.jpg);
-  }
+  #home-titles {
+    height: calc(100vh - 140px);
+}
 
   #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
     display: grid;
@@ -68,7 +91,7 @@ Template: astra
 }
 
 @media (min-width: 1024px) {
-  .home-page {
+  /* .home-page {
     background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-large.jpg);
-  }
+  } */
 }
