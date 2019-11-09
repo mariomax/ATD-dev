@@ -15,7 +15,7 @@ Template: astra
 :root {
   --white: #FFF;
   --light: #D2D2D2;
-  --orange: #EB4625;
+  --orange: #eb4625;
   --blue: #20557D;
   --mid: #5B5B5B;
   --green: #0E7E12;
@@ -23,7 +23,7 @@ Template: astra
 }
 
 /* Navigation */
-.elementor-28 .elementor-element.elementor-element-9773597 > .elementor-element-populated {
+.elementor-28 .elementor-element.elementor-element-9773597>.elementor-element-populated {
   height: 100vh;
 }
 
@@ -44,8 +44,17 @@ Template: astra
   text-align: right;
 }
 
+h2.service-title {
+  color: var(--blue);
+  display: inline;
+}
+
+p.service-info {
+  display: inline;
+}
+
 ul.features-list {
-  margin: 0 0 1.5em .3em;
+  margin: 0 0 1.5em 1em;
 }
 
 .features-list li {
@@ -57,16 +66,29 @@ ul.features-list {
 
 .features-list li:before {
   content: "\25BA \0020";
-  font-size: 6px;
+  color: var(--orange);
+  font-size: 10px;
   position: absolute;
-  top: 3px;
+  top: 2px;
   left: -1px;
+}
+
+h2.widget-title {
+  color: var(--blue);
+}
+
+#sb_instagram .sbi_follow_btn a {
+  background: var(--blue);
+}
+
+#sb_instagram .sbi_follow_btn a:hover {
+  box-shadow: inset 0 0 10px 20px var(--orange);
 }
 
 @media (min-width: 768px) {
   #home-titles {
     height: calc(100vh - 140px);
-}
+  }
 
   #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
     display: grid;
