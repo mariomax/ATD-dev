@@ -117,3 +117,14 @@ h2.widget-title {
     background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-large.jpg);
   } */
 }
+
+/* https://anchortagdesign.com/wp-content/uploads/2019/01/b17port-edited-e1551939064698.jpg */
+.wtf-headline h2 {
+  background-image: url(https://anchortagdesign.com/wp-content/uploads/2019/01/b17port-edited-e1551939064698.jpg);
+  background-position: center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+  /* color: transparent; */
+} 
