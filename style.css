@@ -77,6 +77,30 @@ h2.widget-title {
   color: var(--blue);
 }
 
+#about .elementor-widget-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2rem;
+}
+
+#about p {
+  color: var(--mid);
+}
+
+img.mopic {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+#about figcaption {
+  color: var(--blue);
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
 #sb_instagram .sbi_follow_btn a {
   background: var(--blue);
 }
@@ -99,6 +123,21 @@ h2.widget-title {
 
   .wp-caption .wp-caption-text {
     margin: .5em 0 0;
+  }
+
+  #about .elementor-widget-container {
+    display: block;
+  }
+
+  img.mopic {
+    float: left;
+    shape-outside: circle(50%);
+    margin: 10px;
+    width: 13rem;
+  }
+
+  #about figcaption {
+    display: none;
   }
 }
 
