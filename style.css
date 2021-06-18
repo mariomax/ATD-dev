@@ -44,6 +44,10 @@ Template: astra
   text-align: right;
 }
 
+#service-button .elementor-column-wrap .elementor-element {
+  margin-bottom: 0;
+}
+
 h2.service-title {
   color: var(--blue);
   display: inline;
@@ -116,7 +120,7 @@ img.mopic {
 
   #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
   }
@@ -151,10 +155,22 @@ img.mopic {
   }
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   /* .home-page {
     background-image: url(https://atagdev.com/wp-content/uploads/2019/08/hero-large.jpg);
   } */
+  #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #portfolio-col .elementor-column-wrap .elementor-widget-wrap {
+    grid-template-columns: repeat(4,1fr); 
+  }
 }
 
 /* https://anchortagdesign.com/wp-content/uploads/2019/01/b17port-edited-e1551939064698.jpg */
